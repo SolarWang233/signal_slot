@@ -1,13 +1,9 @@
-
-#include "signal_slot.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#include "signal_slot_port.h"
-#define LOG_TAG "signal_slot"
-#include "elog.h"
+#include "FreeRTOS.h"
+#include "semphr.h"
+#include "signal_slot.h"
 static Signal *signal_registry = NULL;  // 信号注册表
 
 // 创建一个新的信号

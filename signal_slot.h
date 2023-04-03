@@ -3,8 +3,6 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "FreeRTOS.h"
-#include "semphr.h"
 #include "signal_slot_port.h"
 
 #define NAME_LEN_MAX 32
